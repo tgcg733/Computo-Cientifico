@@ -114,6 +114,8 @@ hist_gps_pib
 
 ##Propuesta de Modelo
 #Analisis de Componentes Principales
+library(pacman)
+p_load(readxl, tidyverse, ggplot2, corrplot, rpubs, factoextra)
 # Seleccionar solo las columnas numéricas
 datos_n <- datos[, -1] # Asumimos que la primera columna no es numérica
 # Verificar si hay datos faltantes
